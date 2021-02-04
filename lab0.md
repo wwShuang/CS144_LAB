@@ -17,7 +17,7 @@
 </ol>
 <h2 id="send-yourself-an-email">2.2 Send yourself an email</h2>
 <p>jump</p>
-<h1 id="listening-and-connecting">2.3 Listening and connecting</h1>
+<h2 id="listening-and-connecting">2.3 Listening and connecting</h2>
 <ol>
 <li>In one terminal window, run  <code>netcat -v -l -p 9090</code> on your VM.</li>
 <li>Leave netcat running. In another terminal window, run <code>telnet localhost 9090</code> (also on your VM).</li>
