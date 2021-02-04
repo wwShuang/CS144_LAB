@@ -69,13 +69,15 @@ C++中set这个数据结构封装了红黑树，后者在查找、删除和插�
 	ByteStream _output<span class="token punctuation">;</span>  <span class="token comment">//!&lt; The reassembled in-order byte stream</span>
     size_t _capacity<span class="token punctuation">;</span>    <span class="token comment">//!&lt; The maximum number of bytes</span>
     size_t _bytes_unassembled<span class="token punctuation">;</span>
-    std<span class="token operator">::</span>set<span class="token operator">&lt;</span><span class="token keyword">struct</span> Node<span class="token operator">&gt;</span> _substr_waiting<span class="token punctuation">;</span>
+    std<span class="token operator">::</span>set<span class="token operator">&lt;</span><span class="token keyword">struct</span> Node<span class="token operator">&gt;</span> _substr_waiting<span class="token punctuation">;</span> <span class="token comment">//set.insert 用法</span>
     <span class="token keyword">bool</span> _flag_eof<span class="token punctuation">;</span>
     size_t _pos_eof<span class="token punctuation">;</span>
 </code></pre>
 <p>两份代码区别，<a href="https://www.cnblogs.com/lustar/p/7450097.html">直接初始化 默认初始化</a><br>
 <a href="https://en.cppreference.com/w/cpp/language/operators">Relational operators</a><br>
-<a href="https://blog.csdn.net/liitdar/article/details/80654324">C++的重载操作符（operator）介绍</a></p>
+<a href="https://blog.csdn.net/liitdar/article/details/80654324">C++的重载操作符（operator）介绍</a><br>
+<a href="http://www.cplusplus.com/reference/set/set/insert/">c++ set使用</a>可直接插入struct node,  插入后自动排序<br>
+<a href="https://www.geeksforgeeks.org/set-lower_bound-function-in-c-stl/">substr_lower_bound()</a></p>
 <pre class=" language-ruby"><code class="prism  language-ruby">横着看
 <span class="token function">stream_start</span>		<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>first_unread	first_unsembled	   unaccept
 v                   v				v				   v
@@ -93,9 +95,9 @@ v                   v				v				   v
 
 <span class="token comment">//辅助函数：向缓冲区写入(整理)</span>
 <span class="token keyword">void</span> StreamReassembler<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">insert_substr_waiting</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">struct</span> Node <span class="token operator">&amp;</span>node<span class="token punctuation">)</span>
-如果缓冲区是空
+如果等待区是空
 	插入数据
-	记录未排序个数
+	记录未排序数据的大小
 
 记录node temp <span class="token operator">=</span> node （<span class="token keyword">const</span>）
 若node的左边有节点，考察是否能与左边的节点合并（用了迭代器）
@@ -126,6 +128,10 @@ size_t <span class="token function">unassembled_bytes</span><span class="token p
 <span class="token comment">// Is the internal state empty (other than the output stream)?</span>
 bool <span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
 </code></pre>
+<p>ps： 由于新课程代码不同，小心替换cmakelist文件和代码文件</p>
+<blockquote>
+<p>可恶的小插曲浪费了两个小时，不过也明白了cmake的作用。cap 文件缺失， 添加后要在cmake 文件中增加一行代码</p>
+</blockquote>
 <h1 id="reference">reference</h1>
 <ol>
 <li><a href="https://www.cnblogs.com/kangyupl/p/stanford_cs144_labs.html#1029644895">LAB1#</a></li>
