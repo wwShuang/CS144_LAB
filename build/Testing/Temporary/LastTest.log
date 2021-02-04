@@ -1,17 +1,137 @@
-Start testing: Feb 02 23:37 PST
+Start testing: Feb 03 18:58 PST
 ----------------------------------------------------------
-23/166 Testing: t_byte_stream_construction
-23/166 Test: t_byte_stream_construction
-Command: "/home/cs144/sponge/build/tests/byte_stream_construction"
+15/166 Testing: t_strm_reassem_cap
+15/166 Test: t_strm_reassem_cap
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_cap"
 Directory: /home/cs144/sponge/build
-"t_byte_stream_construction" start time: Feb 02 23:37 PST
+"t_strm_reassem_cap" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_cap" end time: Feb 03 18:58 PST
+"t_strm_reassem_cap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/166 Testing: t_strm_reassem_single
+16/166 Test: t_strm_reassem_single
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_single"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_single" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_construction" end time: Feb 02 23:37 PST
+"t_strm_reassem_single" end time: Feb 03 18:58 PST
+"t_strm_reassem_single" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/166 Testing: t_strm_reassem_seq
+17/166 Test: t_strm_reassem_seq
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_seq"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_seq" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_seq" end time: Feb 03 18:58 PST
+"t_strm_reassem_seq" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/166 Testing: t_strm_reassem_dup
+18/166 Test: t_strm_reassem_dup
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_dup"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_dup" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_dup" end time: Feb 03 18:58 PST
+"t_strm_reassem_dup" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/166 Testing: t_strm_reassem_holes
+19/166 Test: t_strm_reassem_holes
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_holes"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_holes" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_holes" end time: Feb 03 18:58 PST
+"t_strm_reassem_holes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/166 Testing: t_strm_reassem_many
+20/166 Test: t_strm_reassem_many
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_many"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_many" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_many" end time: Feb 03 18:58 PST
+"t_strm_reassem_many" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/166 Testing: t_strm_reassem_overlapping
+21/166 Test: t_strm_reassem_overlapping
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_overlapping"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_overlapping" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_overlapping" end time: Feb 03 18:58 PST
+"t_strm_reassem_overlapping" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/166 Testing: t_strm_reassem_win
+22/166 Test: t_strm_reassem_win
+Command: "/home/cs144/sponge/build/tests/fsm_stream_reassembler_win"
+Directory: /home/cs144/sponge/build
+"t_strm_reassem_win" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_win" end time: Feb 03 18:58 PST
+"t_strm_reassem_win" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/166 Testing: t_byte_stream_construction
+23/166 Test: t_byte_stream_construction
+Command: "/home/cs144/sponge/build/tests/byte_stream_construction"
+Directory: /home/cs144/sponge/build
+"t_byte_stream_construction" start time: Feb 03 18:58 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_byte_stream_construction" end time: Feb 03 18:58 PST
 "t_byte_stream_construction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +139,14 @@ Test Passed.
 24/166 Test: t_byte_stream_one_write
 Command: "/home/cs144/sponge/build/tests/byte_stream_one_write"
 Directory: /home/cs144/sponge/build
-"t_byte_stream_one_write" start time: Feb 02 23:37 PST
+"t_byte_stream_one_write" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_one_write" end time: Feb 02 23:37 PST
+"t_byte_stream_one_write" end time: Feb 03 18:58 PST
 "t_byte_stream_one_write" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +154,14 @@ Test Passed.
 25/166 Test: t_byte_stream_two_writes
 Command: "/home/cs144/sponge/build/tests/byte_stream_two_writes"
 Directory: /home/cs144/sponge/build
-"t_byte_stream_two_writes" start time: Feb 02 23:37 PST
+"t_byte_stream_two_writes" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_two_writes" end time: Feb 02 23:37 PST
+"t_byte_stream_two_writes" end time: Feb 03 18:58 PST
 "t_byte_stream_two_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,14 +169,14 @@ Test Passed.
 26/166 Test: t_byte_stream_capacity
 Command: "/home/cs144/sponge/build/tests/byte_stream_capacity"
 Directory: /home/cs144/sponge/build
-"t_byte_stream_capacity" start time: Feb 02 23:37 PST
+"t_byte_stream_capacity" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.86 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_capacity" end time: Feb 02 23:37 PST
+"t_byte_stream_capacity" end time: Feb 03 18:58 PST
 "t_byte_stream_capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,14 +184,14 @@ Test Passed.
 27/166 Test: t_byte_stream_many_writes
 Command: "/home/cs144/sponge/build/tests/byte_stream_many_writes"
 Directory: /home/cs144/sponge/build
-"t_byte_stream_many_writes" start time: Feb 02 23:37 PST
+"t_byte_stream_many_writes" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_many_writes" end time: Feb 02 23:37 PST
+"t_byte_stream_many_writes" end time: Feb 03 18:58 PST
 "t_byte_stream_many_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -79,7 +199,7 @@ Test Passed.
 28/166 Test: t_webget
 Command: "/home/cs144/sponge/tests/webget_t.sh"
 Directory: /home/cs144/sponge/build
-"t_webget" start time: Feb 02 23:37 PST
+"t_webget" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 HTTP/1.1 200 OK
@@ -87,10 +207,10 @@ Content-type: text/plain
 
 7SmXqWkrLKzVBCEalbSPqBcvs11Pw263K7x4Wv3JckI
 <end of output>
-Test time =   1.41 sec
+Test time =   1.02 sec
 ----------------------------------------------------------
 Test Passed.
-"t_webget" end time: Feb 02 23:37 PST
+"t_webget" end time: Feb 03 18:58 PST
 "t_webget" time elapsed: 00:00:01
 ----------------------------------------------------------
 
@@ -98,14 +218,14 @@ Test Passed.
 50/166 Test: t_address_dt
 Command: "/home/cs144/sponge/build/doctests/address_dt"
 Directory: /home/cs144/sponge/build
-"t_address_dt" start time: Feb 02 23:37 PST
+"t_address_dt" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_address_dt" end time: Feb 02 23:37 PST
+"t_address_dt" end time: Feb 03 18:58 PST
 "t_address_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -113,14 +233,14 @@ Test Passed.
 51/166 Test: t_parser_dt
 Command: "/home/cs144/sponge/build/doctests/parser_dt"
 Directory: /home/cs144/sponge/build
-"t_parser_dt" start time: Feb 02 23:37 PST
+"t_parser_dt" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_parser_dt" end time: Feb 02 23:37 PST
+"t_parser_dt" end time: Feb 03 18:58 PST
 "t_parser_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -128,15 +248,15 @@ Test Passed.
 52/166 Test: t_socket_dt
 Command: "/home/cs144/sponge/build/doctests/socket_dt"
 Directory: /home/cs144/sponge/build
-"t_socket_dt" start time: Feb 02 23:37 PST
+"t_socket_dt" start time: Feb 03 18:58 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_socket_dt" end time: Feb 02 23:37 PST
+"t_socket_dt" end time: Feb 03 18:58 PST
 "t_socket_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 02 23:37 PST
+End testing: Feb 03 18:58 PST
